@@ -76,4 +76,35 @@ c_event_user_pivot['cluster'] = y_kmeans
 hb = hb.merge(right = c_event_user_pivot, how = 'left', left_on = 'org:resource' , right_index = True)
 
 cluster_user = hb.filter(['case','event','cluster'])
-cluster_user_pivot = event_user.pivot_table(values = 'case', index = 'cluster', columns = 'event',  aggfunc='count', fill_value = 0)
+cluster_user_pivot = cluster_user.pivot_table(values = 'case', index = 'cluster', columns = 'event',  aggfunc='count', fill_value = 0)
+
+# Calculating throughput times
+
+min_completion_times = pd.read_csv('C:/Users/vince_000/Documents/GitHub/Sim_V_MzW/Data/Created/min_completion_times.txt')
+min_completion_times['min_completion_time'] = min_completion_times['min_completion_time'].astype("datetime64") 
+# create min_completion_times_per_case (mctpc)
+mctpc = min_completion_times.pivot(values= 'min_completion_time', index = '_case_', columns = '_event_')
+
+# now comes the real calculation considering the process flow
+
+mctpc['document_ok'] = ~ pd.isnull(mctpc['DELETE'])
+mctpc['diagnosis_correct'] = ~ pd.isnull(mctpc['CHANGE DIAGN'])
+
+mctpc_diagnosis_correct = mctpc[mctpc['diagnosis_correct'] == True]
+
+mctpc_diagnosis_correct['time_NEW_to_FIN'] = mctpc_diagnosis_correct['FIN'] - mctpc_diagnosis_correct['NEW']
+
+mctpc_diagnosis_incorrect = mctpc[mctpc['diagnosis_correct'] == False]
+
+mctpc_diagnosis_incorrect['time_NEW_to_CHANGE_DIAGN'] = mctpc_diagnosis_correct['CHANGE DIAGN'] - mctpc_diagnosis_correct['NEW']
+mctpc_diagnosis_incorrect['time_CHANGE_DIAGN_to_FIN'] = mctpc_diagnosis_correct['FIN'] - mctpc_diagnosis_correct['CHANGE DIAGN']
+
+mctpc_document_not_ok = mctpc[mctpc['document_ok'] == False]
+
+mctpc_document_not_ok['time_NEW_to_DELETE'] = mctpc_document_not_ok['DELETE'] - mctpc_document_not_ok['NEW']
+
+mctpc_document_ok = mctpc[mctpc['document_ok'] == True]
+
+mctpc_document_ok['time_FIN_to_RELEASE'] = mctpc_document_ok['RELEASE'] - mctpc_document_ok['FIN']
+mctpc_document_ok['time_RELEASE_to_CODE_OK'] = mctpc_document_ok['CODE OK'] - mctpc_document_ok['RELEASE']
+mctpc_document_ok['time_CODE_OK_to_BILLED'] = mctpc_document_ok['BILLED'] - mctpc_document_ok['CODE OK']
