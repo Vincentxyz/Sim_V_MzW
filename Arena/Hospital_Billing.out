@@ -1,0 +1,74 @@
+
+----------------------------------------------------------------------
+17114:CCREAT
+A runtime error was detected at time 80.953014 at the following block:
+
+ *    1 11$             CREATE,1,HoursToBaseTime(0.0),Entity 1:
+                            HoursToBaseTime(EXPO(0.5274457)):
+                            NEXT(12$);
+
+Maximum of 150 entities exceeded.
+Possible causes:
+- A logic problem in your model is creating too many entities or not
+  disposing them. The run controller may be helpful in finding the problem.
+- You are in demo mode and have exceeded the entity limit. The commercial
+  version is required to run large models.
+- You have set an entity limit on the DISCRETE element that is too small.
+  Remove the limit or set it to a larger number.
+- You have exceeded the standard array s 
+pace for models. Use the Array Sizes
+  page in the Run/Setup dialog to increase the RSET space allocated and
+  recheck your model.
+----------------------------------------------------------------------
+
+
+SIMAN Run Controller.
+
+80.953014 Hours>
+                                      ARENA Simulation Results
+                 vincent-finn-alexander.meyer-zu-wickern@hsrw.org - License: STUDENT
+
+                                  Summary for Replication 1 of 1
+
+Project: Hospital_Billing                                            Run execution date : 6/ 8/2019
+Analyst: vincent                                                     Model revision date: 6/ 8/2019
+
+Replication ended at time      : 80.953014 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             37.008     (Insuf)    3.9802     71.180         10    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         10    
+Entity 1.WaitTime                           .00000     (Insuf)    .00000     .00000         10    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         10    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         10    
+Entity 1.TotalTime                          37.008     (Insuf)    3.9802     71.180         10    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                73.836     (Insuf)    .00000     148.00     148.00    
+Resource 1.NumberBusy                       .00000     (Insuf)    .00000     .00000     .00000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .00000     (Insuf)    .00000     .00000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           158.00    
+Entity 1.NumberOut                          10.000    
+Resource 1.NumberSeized                     .00000    
+Resource 1.ScheduledUtilization             .00000    
+System.NumberOut                            10.000    
+
+
+Simulation run time: 1.12 minutes.
+Simulation run completed with 1 error(s) and 0 warning(s).

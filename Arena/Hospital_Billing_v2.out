@@ -1,0 +1,244 @@
+
+                                      ARENA Simulation Results
+                 vincent-finn-alexander.meyer-zu-wickern@hsrw.org - License: STUDENT
+
+                                  Summary for Replication 1 of 1
+
+Project: Hospital_Billing                                            Run execution date : 6/ 9/2019
+Analyst: vincent                                                     Model revision date: 6/ 9/2019
+
+Replication ended at time      : 2160.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Billing document Old.VATime                 167.60     (Insuf)    137.00     211.00        269    
+Billing document Old.NVATime                .00000     (Insuf)    .00000     .00000        269    
+Billing document Old.WaitTime               .00000     (Insuf)    .00000     .00000        269    
+Billing document Old.TranTime               .00000     (Insuf)    .00000     .00000        269    
+Billing document Old.OtherTime              .00000     (Insuf)    .00000     .00000        269    
+Billing document Old.TotalTime              167.60     (Insuf)    137.00     211.00        269    
+Billing document New.VATime                 166.74     (Insuf)    137.00     201.00        277    
+Billing document New.NVATime                .00000     (Insuf)    .00000     .00000        277    
+Billing document New.WaitTime               .00000     (Insuf)    .00000     .00000        277    
+Billing document New.TranTime               .00000     (Insuf)    .00000     .00000        277    
+Billing document New.OtherTime              .00000     (Insuf)    .00000     .00000        277    
+Billing document New.TotalTime              166.74     (Insuf)    137.00     201.00        277    
+FIN to RELEASE Current Res A.Queue.Waiting  .00000     (Insuf)    .00000     .00000        319    
+RELEASE to CODE OK Current Res A.Queue.Wai  .00000     (Insuf)    .00000     .00000        297    
+RELEASE to CODE OK Sim Other Res.Queue.Wai  .00000     (Insuf)    .00000     .00000         20    
+CODE OK to BILLED.Queue.WaitingTime             --         --         --         --          0
+FIN to RELEASE Sim Res A.Queue.WaitingTime  .00000     (Insuf)    .00000     .00000        281    
+CODE OK to BILLED Sim Res B.Queue.WaitingT  .00000     (Insuf)    .00000     .00000        267    
+CODE OK to BILLED Sim Other Res.Queue.Wait  .00000     (Insuf)    .00000     .00000         17    
+FIN to RELEASE.Queue.WaitingTime                --         --         --         --          0
+RELEASE to CODE OK Sim Res A.Queue.Waiting  .00000     (Insuf)    .00000     .00000        276    
+CODE OK to BILLED Current Other Res.Queue.      --         --         --         --          0
+RELEASE to CODE OK Current.Queue.WaitingTi      --         --         --         --          0
+FIN to RELEASE Sim Other Res.Queue.Waiting  .00000     (Insuf)    .00000     .00000         15    
+CODE OK to BILLED Current Res B.Queue.Wait  .00000     (Insuf)    .00000     .00000        271    
+FIN to RELEASE Current Other Res.Queue.Wai      --         --         --         --          0
+RELEASE to CODE OK.Queue.WaitingTime            --         --         --         --          0
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Billing document Old.WIP                    49.169     (Corr)     .00000     75.000     68.000    
+Billing document New.WIP                    22.277     (Corr)     .00000     33.000     19.000    
+ResHG_Before.NumberBusy                     .00000     (Insuf)    .00000     .00000     .00000    
+ResHG_Before.NumberScheduled                .00000     (Insuf)    .00000     .00000     .00000    
+ResHG_Before.Utilization                    .00000     (Insuf)    .00000     .00000     .00000    
+ResUK_After.NumberBusy                      .00000     (Insuf)    .00000     .00000     .00000    
+ResUK_After.NumberScheduled                 .00000     (Insuf)    .00000     .00000     .00000    
+ResUK_After.Utilization                     .00000     (Insuf)    .00000     .00000     .00000    
+ResUK_Before.NumberBusy                     .00000     (Insuf)    .00000     .00000     .00000    
+ResUK_Before.NumberScheduled                .00000     (Insuf)    .00000     .00000     .00000    
+ResUK_Before.Utilization                    .00000     (Insuf)    .00000     .00000     .00000    
+ResXD_Before.NumberBusy                     .00000     (Insuf)    .00000     .00000     .00000    
+ResXD_Before.NumberScheduled                .00000     (Insuf)    .00000     .00000     .00000    
+ResXD_Before.Utilization                    .00000     (Insuf)    .00000     .00000     .00000    
+ResVD_Before.NumberBusy                     .00000     (Insuf)    .00000     .00000     .00000    
+ResVD_Before.NumberScheduled                .00000     (Insuf)    .00000     .00000     .00000    
+ResVD_Before.Utilization                    .00000     (Insuf)    .00000     .00000     .00000    
+ResHG_After.NumberBusy                      .00000     (Insuf)    .00000     .00000     .00000    
+ResHG_After.NumberScheduled                 .00000     (Insuf)    .00000     .00000     .00000    
+ResHG_After.Utilization                     .00000     (Insuf)    .00000     .00000     .00000    
+ResWA_After.NumberBusy                      .00000     (Insuf)    .00000     .00000     .00000    
+ResWA_After.NumberScheduled                 .00000     (Insuf)    .00000     .00000     .00000    
+ResWA_After.Utilization                     .00000     (Insuf)    .00000     .00000     .00000    
+ResQA_After.NumberBusy                      .00000     (Insuf)    .00000     .00000     .00000    
+ResQA_After.NumberScheduled                 .00000     (Insuf)    .00000     .00000     .00000    
+ResQA_After.Utilization                     .00000     (Insuf)    .00000     .00000     .00000    
+ResIA_After.NumberBusy                      .00000     (Insuf)    .00000     .00000     .00000    
+ResIA_After.NumberScheduled                 .00000     (Insuf)    .00000     .00000     .00000    
+ResIA_After.Utilization                     .00000     (Insuf)    .00000     .00000     .00000    
+ResGA_After.NumberBusy                      .00000     (Insuf)    .00000     .00000     .00000    
+ResGA_After.NumberScheduled                 .00000     (Insuf)    .00000     .00000     .00000    
+ResGA_After.Utilization                     .00000     (Insuf)    .00000     .00000     .00000    
+ResCH_After.NumberBusy                      .00000     (Insuf)    .00000     .00000     .00000    
+ResCH_After.NumberScheduled                 .00000     (Insuf)    .00000     .00000     .00000    
+ResCH_After.Utilization                     .00000     (Insuf)    .00000     .00000     .00000    
+ResDB_Before.NumberBusy                     .00000     (Insuf)    .00000     .00000     .00000    
+ResDB_Before.NumberScheduled                .00000     (Insuf)    .00000     .00000     .00000    
+ResDB_Before.Utilization                    .00000     (Insuf)    .00000     .00000     .00000    
+ResWB_Before.NumberBusy                     .00000     (Insuf)    .00000     .00000     .00000    
+ResWB_Before.NumberScheduled                .00000     (Insuf)    .00000     .00000     .00000    
+ResWB_Before.Utilization                    .00000     (Insuf)    .00000     .00000     .00000    
+ResSB_Before.NumberBusy                     .00000     (Insuf)    .00000     .00000     .00000    
+ResSB_Before.NumberScheduled                .00000     (Insuf)    .00000     .00000     .00000    
+ResSB_Before.Utilization                    .00000     (Insuf)    .00000     .00000     .00000    
+ResIA_Before.NumberBusy                     .00000     (Insuf)    .00000     .00000     .00000    
+ResIA_Before.NumberScheduled                .00000     (Insuf)    .00000     .00000     .00000    
+ResIA_Before.Utilization                    .00000     (Insuf)    .00000     .00000     .00000    
+ResGA_Before.NumberBusy                     .00000     (Insuf)    .00000     .00000     .00000    
+ResGA_Before.NumberScheduled                .00000     (Insuf)    .00000     .00000     .00000    
+ResGA_Before.Utilization                    .00000     (Insuf)    .00000     .00000     .00000    
+ResWA_Before.NumberBusy                     .00000     (Insuf)    .00000     .00000     .00000    
+ResWA_Before.NumberScheduled                .00000     (Insuf)    .00000     .00000     .00000    
+ResWA_Before.Utilization                    .00000     (Insuf)    .00000     .00000     .00000    
+ResQA_Before.NumberBusy                     .00000     (Insuf)    .00000     .00000     .00000    
+ResQA_Before.NumberScheduled                .00000     (Insuf)    .00000     .00000     .00000    
+ResQA_Before.Utilization                    .00000     (Insuf)    .00000     .00000     .00000    
+ResCH_Before.NumberBusy                     .00000     (Insuf)    .00000     .00000     .00000    
+ResCH_Before.NumberScheduled                .00000     (Insuf)    .00000     .00000     .00000    
+ResCH_Before.Utilization                    .00000     (Insuf)    .00000     .00000     .00000    
+ResYC_Before.NumberBusy                     .00000     (Insuf)    .00000     .00000     .00000    
+ResYC_Before.NumberScheduled                .00000     (Insuf)    .00000     .00000     .00000    
+ResYC_Before.Utilization                    .00000     (Insuf)    .00000     .00000     .00000    
+ResYC_After.NumberBusy                      .00000     (Insuf)    .00000     .00000     .00000    
+ResYC_After.NumberScheduled                 .00000     (Insuf)    .00000     .00000     .00000    
+ResYC_After.Utilization                     .00000     (Insuf)    .00000     .00000     .00000    
+Resource Infinite Capacity.NumberBusy       1.4963     (Insuf)    .00000     5.0000     .00000    
+ResWB_After.NumberBusy                      .00000     (Insuf)    .00000     .00000     .00000    
+ResWB_After.NumberScheduled                 .00000     (Insuf)    .00000     .00000     .00000    
+ResWB_After.Utilization                     .00000     (Insuf)    .00000     .00000     .00000    
+ResSB_After.NumberBusy                      .00000     (Insuf)    .00000     .00000     .00000    
+ResSB_After.NumberScheduled                 .00000     (Insuf)    .00000     .00000     .00000    
+ResSB_After.Utilization                     .00000     (Insuf)    .00000     .00000     .00000    
+ResDB_After.NumberBusy                      .00000     (Insuf)    .00000     .00000     .00000    
+ResDB_After.NumberScheduled                 .00000     (Insuf)    .00000     .00000     .00000    
+ResDB_After.Utilization                     .00000     (Insuf)    .00000     .00000     .00000    
+ResB_After.NumberBusy                       4.7711     (Corr)     .00000     11.000     7.0000    
+ResB_After.NumberScheduled                  1875.7     (Insuf)    1875.7     1875.7     1875.7    
+ResB_After.Utilization                      .00254     (Corr)     .00000     .00586     .00373    
+ResA_After.NumberBusy                       16.010     (Corr)     .00000     25.000     12.000    
+ResA_After.NumberScheduled                  256.90     (Insuf)    256.90     256.90     256.90    
+ResA_After.Utilization                      .06232     (Corr)     .00000     .09731     .04671    
+ResU_After.NumberBusy                       .00000     (Insuf)    .00000     .00000     .00000    
+ResU_After.NumberScheduled                  .00000     (Insuf)    .00000     .00000     .00000    
+ResU_After.Utilization                      .00000     (Insuf)    .00000     .00000     .00000    
+ResVD_After.NumberBusy                      .00000     (Insuf)    .00000     .00000     .00000    
+ResVD_After.NumberScheduled                 .00000     (Insuf)    .00000     .00000     .00000    
+ResVD_After.Utilization                     .00000     (Insuf)    .00000     .00000     .00000    
+ResXD_After.NumberBusy                      .00000     (Insuf)    .00000     .00000     .00000    
+ResXD_After.NumberScheduled                 .00000     (Insuf)    .00000     .00000     .00000    
+ResXD_After.Utilization                     .00000     (Insuf)    .00000     .00000     .00000    
+ResU_Before.NumberBusy                      .00000     (Insuf)    .00000     .00000     .00000    
+ResU_Before.NumberScheduled                 .00000     (Insuf)    .00000     .00000     .00000    
+ResU_Before.Utilization                     .00000     (Insuf)    .00000     .00000     .00000    
+ResB_Before.NumberBusy                      4.8993     (Corr)     .00000     15.000     2.0000    
+ResB_Before.NumberScheduled                 1875.7     (Insuf)    1875.7     1875.7     1875.7    
+ResB_Before.Utilization                     .00261     (Corr)     .00000     .00800     .00107    
+ResA_Before.NumberBusy                      17.346     (Corr)     .00000     31.000     16.000    
+ResA_Before.NumberScheduled                 256.90     (Insuf)    256.90     256.90     256.90    
+ResA_Before.Utilization                     .06752     (Corr)     .00000     .12067     .06228    
+FIN to RELEASE Current Res A.Queue.NumberI  .00000     (Insuf)    .00000     .00000     .00000    
+RELEASE to CODE OK Current Res A.Queue.Num  .00000     (Insuf)    .00000     .00000     .00000    
+RELEASE to CODE OK Sim Other Res.Queue.Num  .00000     (Insuf)    .00000     .00000     .00000    
+CODE OK to BILLED.Queue.NumberInQueue       .00000     (Insuf)    .00000     .00000     .00000    
+FIN to RELEASE Sim Res A.Queue.NumberInQue  .00000     (Insuf)    .00000     .00000     .00000    
+CODE OK to BILLED Sim Res B.Queue.NumberIn  .00000     (Insuf)    .00000     .00000     .00000    
+CODE OK to BILLED Sim Other Res.Queue.Numb  .00000     (Insuf)    .00000     .00000     .00000    
+FIN to RELEASE.Queue.NumberInQueue          .00000     (Insuf)    .00000     .00000     .00000    
+RELEASE to CODE OK Sim Res A.Queue.NumberI  .00000     (Insuf)    .00000     .00000     .00000    
+CODE OK to BILLED Current Other Res.Queue.  5.5456     (Insuf)    .00000     12.000     12.000    
+RELEASE to CODE OK Current.Queue.NumberInQ  11.230     (Insuf)    .00000     20.000     20.000    
+FIN to RELEASE Sim Other Res.Queue.NumberI  .00000     (Insuf)    .00000     .00000     .00000    
+CODE OK to BILLED Current Res B.Queue.Numb  .00000     (Insuf)    .00000     .00000     .00000    
+FIN to RELEASE Current Other Res.Queue.Num  10.146     (Insuf)    .00000     18.000     18.000    
+RELEASE to CODE OK.Queue.NumberInQueue      .00000     (Insuf)    .00000     .00000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Billing document Old.NumberIn               337.00    
+Billing document Old.NumberOut              269.00    
+Billing document New.NumberIn               296.00    
+Billing document New.NumberOut              277.00    
+ResHG_Before.NumberSeized                   .00000    
+ResHG_Before.ScheduledUtilization           .00000    
+ResUK_After.NumberSeized                    .00000    
+ResUK_After.ScheduledUtilization            .00000    
+ResUK_Before.NumberSeized                   .00000    
+ResUK_Before.ScheduledUtilization           .00000    
+ResXD_Before.NumberSeized                   .00000    
+ResXD_Before.ScheduledUtilization           .00000    
+ResVD_Before.NumberSeized                   .00000    
+ResVD_Before.ScheduledUtilization           .00000    
+ResHG_After.NumberSeized                    .00000    
+ResHG_After.ScheduledUtilization            .00000    
+ResWA_After.NumberSeized                    .00000    
+ResWA_After.ScheduledUtilization            .00000    
+ResQA_After.NumberSeized                    .00000    
+ResQA_After.ScheduledUtilization            .00000    
+ResIA_After.NumberSeized                    .00000    
+ResIA_After.ScheduledUtilization            .00000    
+ResGA_After.NumberSeized                    .00000    
+ResGA_After.ScheduledUtilization            .00000    
+ResCH_After.NumberSeized                    .00000    
+ResCH_After.ScheduledUtilization            .00000    
+ResDB_Before.NumberSeized                   .00000    
+ResDB_Before.ScheduledUtilization           .00000    
+ResWB_Before.NumberSeized                   .00000    
+ResWB_Before.ScheduledUtilization           .00000    
+ResSB_Before.NumberSeized                   .00000    
+ResSB_Before.ScheduledUtilization           .00000    
+ResIA_Before.NumberSeized                   .00000    
+ResIA_Before.ScheduledUtilization           .00000    
+ResGA_Before.NumberSeized                   .00000    
+ResGA_Before.ScheduledUtilization           .00000    
+ResWA_Before.NumberSeized                   .00000    
+ResWA_Before.ScheduledUtilization           .00000    
+ResQA_Before.NumberSeized                   .00000    
+ResQA_Before.ScheduledUtilization           .00000    
+ResCH_Before.NumberSeized                   .00000    
+ResCH_Before.ScheduledUtilization           .00000    
+ResYC_Before.NumberSeized                   .00000    
+ResYC_Before.ScheduledUtilization           .00000    
+ResYC_After.NumberSeized                    .00000    
+ResYC_After.ScheduledUtilization            .00000    
+Resource Infinite Capacity.NumberSeized     52.000    
+ResWB_After.NumberSeized                    .00000    
+ResWB_After.ScheduledUtilization            .00000    
+ResSB_After.NumberSeized                    .00000    
+ResSB_After.ScheduledUtilization            .00000    
+ResDB_After.NumberSeized                    .00000    
+ResDB_After.ScheduledUtilization            .00000    
+ResB_After.NumberSeized                     267.00    
+ResB_After.ScheduledUtilization             .00254    
+ResA_After.NumberSeized                     557.00    
+ResA_After.ScheduledUtilization             .06232    
+ResU_After.NumberSeized                     .00000    
+ResU_After.ScheduledUtilization             .00000    
+ResVD_After.NumberSeized                    .00000    
+ResVD_After.ScheduledUtilization            .00000    
+ResXD_After.NumberSeized                    .00000    
+ResXD_After.ScheduledUtilization            .00000    
+ResU_Before.NumberSeized                    .00000    
+ResU_Before.ScheduledUtilization            .00000    
+ResB_Before.NumberSeized                    271.00    
+ResB_Before.ScheduledUtilization            .00261    
+ResA_Before.NumberSeized                    616.00    
+ResA_Before.ScheduledUtilization            .06752    
+System.NumberOut                            546.00    
+
+
+Simulation run time: 0.08 minutes.
+Simulation run complete.

@@ -1,0 +1,24 @@
+[RESOURCES]
+Resource 1
+[VARIABLES]
+NEW to FIN.NumberIn
+FIN to RELEASE.NumberIn
+FIN to RELEASE.NumberOut
+NEW to FIN.NumberOut
+Document OK?.NumberOut True
+Billed.NumberOut
+CODE OK to BILLED.NumberOut
+RELEASE to CODE OK.NumberOut
+CODE OK to BILLED.NumberIn
+NEW.NumberOut
+Deleted.NumberOut
+NEW to DELETE.NumberIn
+NEW to CHANGE DIAGN.NumberIn
+NEW to CHANGE DIAGN.NumberOut
+NEW to DELETE.NumberOut
+RELEASE to CODE OK.NumberIn
+Diagnosis correct?.NumberOut True
+Diagnosis correct?.NumberOut False
+Document OK?.NumberOut False
+CHANGE DIAGN to FIN.NumberOut
+CHANGE DIAGN to FIN.NumberIn
