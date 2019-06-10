@@ -140,7 +140,9 @@ change_time_delta_to_days(mctpc, 'time_FIN_to_BILLED')
 plt.hist(mctpc['time_FIN_to_BILLED'],bins = 100, density = True)
 
 plt.hist(mctpc['time_FIN_to_BILLED'],bins = 100, density = True, range =[0, 50])
-
+plt.xlabel('Time of patient finalization to billed status')
+plt.ylabel('Frequency density')
+plt.title('Throughput time of medical billing proces')
 
 df_events = [[mctpc,'time_FIN_to_RELEASE' ],
              [mctpc,'time_RELEASE_to_CODE_OK'],
