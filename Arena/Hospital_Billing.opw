@@ -1,24 +1,75 @@
 [RESOURCES]
-Resource 1
+ResHG_Before
+ResUK_After
+ResUK_Before
+ResXD_Before
+ResVD_Before
+ResHG_After
+ResWA_After
+ResQA_After
+ResIA_After
+ResGA_After
+ResCH_After
+ResDB_Before
+ResWB_Before
+ResSB_Before
+ResIA_Before
+ResGA_Before
+ResWA_Before
+ResQA_Before
+ResCH_Before
+ResYC_Before
+ResYC_After
+Resource Infinite Capacity
+ResWB_After
+ResSB_After
+ResDB_After
+ResB_After
+ResA_After
+ResU_After
+ResVD_After
+ResXD_After
+ResU_Before
+ResB_Before
+ResA_Before
 [VARIABLES]
-NEW to FIN.NumberIn
-FIN to RELEASE.NumberIn
-FIN to RELEASE.NumberOut
-NEW to FIN.NumberOut
-Document OK?.NumberOut True
-Billed.NumberOut
-CODE OK to BILLED.NumberOut
-RELEASE to CODE OK.NumberOut
-CODE OK to BILLED.NumberIn
-NEW.NumberOut
-Deleted.NumberOut
-NEW to DELETE.NumberIn
-NEW to CHANGE DIAGN.NumberIn
-NEW to CHANGE DIAGN.NumberOut
-NEW to DELETE.NumberOut
-RELEASE to CODE OK.NumberIn
-Diagnosis correct?.NumberOut True
-Diagnosis correct?.NumberOut False
-Document OK?.NumberOut False
-CHANGE DIAGN to FIN.NumberOut
-CHANGE DIAGN to FIN.NumberIn
+Billed Sim.NumberOut
+CODE OK to BILLED Sim Other Res.NumberOut
+FIN to RELEASE Current Other Res.NumberOut
+CODE OK to BILLED Sim Res B.NumberIn
+RELEASE to CODE OK Current.NumberIn
+RELEASE to CODE OK Current.NumberOut
+Res B BILLED? Sim.NumberOut True
+RELEASE to CODE OK Sim Res A.NumberOut
+FIN to RELEASE Current Other Res.NumberIn
+RELEASE to CODE OK Sim Res A.NumberIn
+Res A RELEASE? Sim.NumberOut True
+RELEASE to CODE OK Sim Other Res.NumberIn
+Res A RELEASE? Sim.NumberOut False
+RELEASE to CODE OK Sim Other Res.NumberOut
+RELEASE to CODE OK Current Res A.NumberOut
+RELEASE to CODE OK Current Res A.NumberIn
+FIN to RELEASE Sim Res A.NumberIn
+Billed Current.NumberOut
+FIN to RELEASE Sim Res A.NumberOut
+FIN Current.NumberOut
+CODE OK to BILLED Current Other Res.NumberIn
+CODE OK to BILLED Current Other Res.NumberOut
+Res A CODE OK? Sim.NumberOut True
+FIN to RELEASE Current Res A.NumberIn
+FIN to RELEASE Current Res A.NumberOut
+Res A CODE OK? Sim.NumberOut False
+FIN to RELEASE Sim Other Res.NumberIn
+CODE OK to BILLED Current Res B.NumberOut
+CODE OK to BILLED Sim Other Res.NumberIn
+FIN to RELEASE Sim Other Res.NumberOut
+Res B BILLED? current.NumberOut False
+CODE OK to BILLED Current Res B.NumberIn
+Res A RELEASE? Current.NumberOut False
+CODE OK to BILLED Sim Res B.NumberOut
+Res A RELEASE? Current.NumberOut True
+Res B BILLED? Sim.NumberOut False
+Res A CODE OK? current.NumberOut False
+FIN Sim.NumberOut
+Res A CODE OK? current.NumberOut True
+Res B BILLED? current.NumberOut True
